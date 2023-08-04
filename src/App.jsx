@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import RegistrationForm from "./Components/Form Validation/FormValidation";
-import NavbarWithSearchBox from "./Components/Navbar/Navbar";
+import NavbarWithSearchBox from "./Components/Navbar/navbar";
 import BookstoreSearchBar from "./main-pages/home";
 import About from "./Components/about/about";
 import BookCollection from "./Components/books/books";
@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <>
-      <NavbarWithSearchBox />
+      <NavbarWithSearchBox/>
       <BrowserRouter>
         <Routes>
           <Route index element={<RegistrationForm />} />
